@@ -2,15 +2,13 @@
  * @Author: aiun
  * @Date: 2021-04-20 22:11:21
  * @LastEditors: aiun
- * @LastEditTime: 2021-04-21 15:16:16
+ * @LastEditTime: 2021-04-22 11:24:01
  * @Description: file content
 -->
 <!DOCTYPE html>
 <html lang="en">
-        <%= require('html-loader!./layout/html-head.html') %>
-        //require('html-loader!./layout/html-head.html');
-        //require('html-loader?interpolate!./layout/html-head.html');
+        #include("./layout/head-common.html")
     <body>
-        <%= require('html-loader!./layout/footer.html') %>
+        #include("./layout/footer.html")
     </body>
 </html>

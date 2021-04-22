@@ -2,7 +2,7 @@
  * @Author: aiun
  * @Date: 2021-04-09 16:55:17
  * @LastEditors: aiun
- * @LastEditTime: 2021-04-21 21:43:11
+ * @LastEditTime: 2021-04-22 11:22:33
  * @Description: file content
  */
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');//引入css单独打包插件
@@ -96,6 +96,7 @@ var config = {
                 }
             },
             //处理html的img图片（负责引入img，从而能被url-loader进行处理）
+            //还可以抽取html的公共模块
             { test: /\.html$/,
                 loader: 'html-withimg-loader'
             }

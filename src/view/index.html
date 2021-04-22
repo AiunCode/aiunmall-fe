@@ -2,21 +2,19 @@
  * @Author: aiun
  * @Date: 2021-04-09 22:53:28
  * @LastEditors: aiun
- * @LastEditTime: 2021-04-21 20:29:36
+ * @LastEditTime: 2021-04-22 11:28:57
  * @Description: file content
 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <!-- <%= require('html-loader!./layout/head-common.html') %> -->
+    #include("./layout/head-common.html")
 </head>
 <body>
-    hello
-    
+    hello webpack
     <img src="../image/backend-map.png">
-    <script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- 引入juqery -->
+    #include("./layout/footer.html")
     <script type="text/javascript" src="../../dist/js/index.js"></script>
 </body>
 </html>
